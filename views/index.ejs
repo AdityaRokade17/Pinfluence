@@ -1,0 +1,23 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full h-screen bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] 
+            flex items-center justify-center">
+  <div class="w-[28vw] h-[62vh] bg-white px-5 py-10 rounded-[30px]">
+    <h1 class="text-3xl font-semibold text-zinc-800 text-center leading-none tracking-tighter p-3 ">Welcome To Pinfluence</h1>
+    <form action="/login" method="post">
+      <input class="border rounded-md block mt-2 w-full px-3 py-2" type="text" name="username" placeholder="username">
+      <input class="border rounded-md block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="password">
+      <input class="border rounded-full block mt-2 w-full px-3 py-2 bg-red-600 text-white" type="submit" value="Login">
+
+      <a class="p-1 font-semibold text-zinc-700" href="#">Forget Password ?</a>
+      
+      <p class="text-xs font-semibold text-zinc-700 mt-7 text-center w-3/4 mx-auto">By continuing, you agree to Pinfluence's 
+        Terms of Service; and acknowledge you've read our 
+        Privacy Policy; Notice at collection; 
+      </p>
+    </form>
+    <a href="/register" class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center w-full">Dont have an account ?</a>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
